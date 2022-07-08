@@ -1,0 +1,6 @@
+services:
+  certcheckerbot:
+    image: ghcr.io/stuchalin/certcheckerbot:main
+    env_file:
+      - .env
+    restart: unless-stopped
